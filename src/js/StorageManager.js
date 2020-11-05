@@ -33,6 +33,7 @@ export default class StorageManager {
         });
 
         AWS.config.update({
+            endpoint:'https://s3.us-east-2.wasabisys.com', //Specify the correct endpoint based on where your bucket is
             accessKeyId: this.config.get("accessKeyId"),
             secretAccessKey: this.config.get("secretAccessKey"),
             region: this.config.get("region")
